@@ -1,0 +1,72 @@
+/* Your custom styles */
+html,
+body,
+header,
+.intro-section {
+    height: 100%;
+}
+
+@media (min-width: 560px) and (max-width: 740px) {
+    html,
+    body,
+    header,
+    .intro-section {
+        height: 470px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1b1b1b !important;
+    }
+
+    .navbar {
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12) !important;
+    }
+}
+
+
+.agency .navbar {
+    /*background-color: #7d8488;*/
+    background-color: #1b1b1b;
+}
+
+    .agency .navbar:not(.top-nav-collapse) {
+        background-color: transparent;
+    }
+
+@media (max-width: 768px) {
+    .agency .navbar:not(.top-nav-collapse) {
+        /*background: #7d8488;*/
+        background: #1b1b1b;
+    }
+}
+
+@media (min-width: 769px) {
+    .agency .navbar:not(.top-nav-collapse) {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.company-logo {
+    width: 120px;
+    height: 56px;
+    background: url('../img/ecics_logo.png') top center no-repeat;
+}
+
+.agency .mask.rgba-gradient {
+    /*background: -webkit-linear-gradient(90deg, rgba(190, 190, 190, 0.70), rgba(14, 14, 14, 0.70) 100%);
+    background: -webkit-gradient(linear, 90deg, from(rgba(190, 190, 190, 0.70)), to(rgba(14, 14, 14, 0.70)));
+    background: -o-linear-gradient(90deg, rgba(190, 190, 190, 0.70), rgba(14, 14, 14, 0.70) 100%);
+    background: linear-gradient(to 90deg, rrgba(190, 190, 190, 0.70), rgba(14, 14, 14, 0.70) 100%);*/
+    background: -webkit-linear-gradient(top, rgba(14,14,14,0.50) 0%,rgba(190,190,190,0.50) 44%,rgba(190,190,190,0.50) 57%,rgba(14,14,14,0.50) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(top, rgba(14,14,14,0.50) 0%, rgba(190,190,190,0.50) 44%, rgba(190,190,190,0.50) 57%, rgba(14,14,14,0.50) 100%); /* FF3.6-15 */
+    background: linear-gradient(to bottom, rgba(14,14,14,0.50) 0%,rgba(190,190,190,0.50) 44%,rgba(190,190,190,0.50) 57%,rgba(14,14,14,0.50) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -o-linear-gradient(top, rgba(14,14,14,0.50) 0%,rgba(190,190,190,0.50) 44%,rgba(190,190,190,0.50) 57%,rgba(14,14,14,0.50) 100%); /* Opera 11.10-11.50 */
+    background: -moz-linear-gradient(top, rgba(14,14,14,0.50) 0%, rgba(190,190,190,0.50) 44%, rgba(190,190,190,0.50) 57%, rgba(14,14,14,0.50) 100%); /* FF3.6-15 */
+}
+
+.heading-text {
+    text-shadow: 0px -1px 10px rgba(14,14,14,0.90);
+}
