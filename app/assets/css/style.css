@@ -115,3 +115,11 @@ header,
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
+
+.ecicsblue-text {
+    color: #2caae2;
+}
+
+.btn-ecicsblue {
+    background-color: #2caae2;
+}
