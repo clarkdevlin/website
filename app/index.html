@@ -590,7 +590,7 @@
 
                     <!--Info-->
                     <p>
-                        <i class="fas fa-home mr-3"></i> 10 Eunos Road 8, #09-04A Singapore Post Centre, Singapore 408600</p>
+                        <i class="fas fa-home mr-3"></i> 10 Eunos Road 8, #09-04A Singapore Post &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Centre, Singapore 408600</p>
                     <p>
                         <i class="fas fa-envelope mr-3"></i> enquiries@ecics.com.sg</p>
                     <p>
@@ -610,7 +610,7 @@
 
                     <!--Title-->
                     <h5 class="title mb-4 text-uppercase">
-                        <strong>Opening hours</strong>
+                        <strong>Operating hours</strong>
                     </h5>
 
                     <!--Opening hours table-->
@@ -697,7 +697,28 @@
       $(".navbar-collapse ").collapse('hide');
     });
 
-    document.getElementById("bgVideo").volume = 0.1;
+    
+    var vid = $('#bgVideo')[0];
+    vid.volume = 0.1;
+    var SCROLLING_VIDEO_OFFSET_TOP = window.innerHeight - 100;
+
+    (function ($) {
+       
+       
+        $(window).on('scroll', function () {
+            var $navbar = $('.navbar');
+
+            if ($navbar.length) {
+                if ($navbar.offset().top > SCROLLING_VIDEO_OFFSET_TOP) {
+                    // $('.scrolling-navbar').addClass('top-nav-collapse');
+                    // $('.scrolling-navbar').removeClass('top-nav-collapse');
+                    vid.pause();
+                } else {
+                    vid.play();
+                }
+            }
+        });
+    })(jQuery);
   </script>
 
 </body>
