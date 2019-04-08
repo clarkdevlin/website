@@ -62,7 +62,7 @@
         </nav>
         <!-- Video -->
         <section class="view intro-section" id="home">
-            <video class="video-intro" poster="../app/assets/img/sgposter2.jpg"
+            <video id="bgVideo" class="video-intro" poster="../app/assets/img/sgposter2.jpg" 
                 playsinline autoplay loop>
                 <source src="https://apps.ecics.com.sg/quickinss/videos/lioncity1bg.mp4"  type="video/mp4">
             </video>
@@ -697,6 +697,7 @@
       $(".navbar-collapse ").collapse('hide');
     });
 
+    document.getElementById("bgVideo").volume = 0.1;
   </script>
 
 </body>
